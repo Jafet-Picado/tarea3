@@ -14,4 +14,5 @@ void Controlador::setHilera(QString hilera){
 
 void Controlador::evaluar(bool a, bool b, bool c, bool d){
     //f->evaluar(a,b,c,d);
+    //falta terminar
 }
