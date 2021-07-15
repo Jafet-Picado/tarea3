@@ -10,6 +10,7 @@ public:
     Funcion();
     void agregarMinTerminos(string hilera);
     bool evaluar(bool a, bool b, bool c, bool d);
+    string getHilera(){return hilera;};
 };
 
 #endif // FUNCION_H
