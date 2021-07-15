@@ -11,6 +11,7 @@ public:
     void agregarMinTerminos(string hilera);
     bool evaluar(bool a, bool b, bool c, bool d);
     string getHilera(){return hilera;};
+    string getDate();
 };
 
 #endif // FUNCION_H

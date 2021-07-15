@@ -12,7 +12,8 @@ class Controlador
 public:
     Controlador();
     void setHilera(QString hilera);
-    void evaluar(bool a, bool b, bool c, bool d);
+    string evaluar(bool a, bool b, bool c, bool d);
+    string getDate();
 };
 
 #endif // CONTROLADOR_H

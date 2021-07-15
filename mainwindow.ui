@@ -110,7 +110,7 @@
    </widget>
    <widget class="QLineEdit" name="editEvaluar">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -122,6 +122,22 @@
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBitacora">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>260</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar Bitacora</string>
     </property>
    </widget>
   </widget>

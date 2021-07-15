@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
+#include <time.h>
 Funcion::Funcion()
 {
     lista = new Lista();
@@ -103,6 +104,14 @@ bool Funcion::evaluar(bool a, bool b, bool c, bool d){
         evaluar+=arr[x];
         x++;
     }
-    std::cout<<evaluar<<endl;
     return evaluar;
+}
+
+string Funcion::getDate(){
+    time_t now = time(0);
+    struct tm tstruct;
+    char buf[80];
+    tstruct = *localtime(&now);
+    strftime(buf, sizeof(buf), "%d-%m-%Y.%X", &tstruct);
+    return buf;
 }

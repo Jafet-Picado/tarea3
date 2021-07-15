@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     controlador.cpp \
+    framebitacora.cpp \
     funcion.cpp \
     lista.cpp \
     main.cpp \
@@ -18,11 +19,13 @@ SOURCES += \
 HEADERS += \
     MinTermino.h \
     controlador.h \
+    framebitacora.h \
     funcion.h \
     lista.h \
     mainwindow.h
 
 FORMS += \
+    framebitacora.ui \
     mainwindow.ui
 
 # Default rules for deployment.
