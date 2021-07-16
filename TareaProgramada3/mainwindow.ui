@@ -130,7 +130,7 @@
    <widget class="QPushButton" name="btnBitacora">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>230</x>
       <y>240</y>
       <width>111</width>
       <height>23</height>
@@ -422,6 +422,19 @@
       </property>
      </widget>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="btnLeer">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Leer Bitacora</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

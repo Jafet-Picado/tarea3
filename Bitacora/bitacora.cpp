@@ -4,6 +4,10 @@
 #include <iostream>
 using namespace std;
 
+Bitacora::Bitacora(){
+    m = new QStringListModel();
+}
+
 void Bitacora::insertarFuncion(string s){
     ofstream archivo;
     archivo.open("Bitacora.txt", ios::out);
@@ -15,20 +19,20 @@ void Bitacora::insertarFuncion(string s){
     archivo.close();
 }
 
-string Bitacora::leerArchivo(){
+QStringListModel* Bitacora::leerArchivo(){
     fstream archivo;
     string texto;
-    string hilera;
     archivo.open("Bitacora.txt", ios::in);
-    if(!archivo){
+    if(!archivo.eof()){
       cout<<"No se pudo abrir el archivo"<<endl;
     }else{
         while(!archivo.eof()){
            getline(archivo, texto);
-           hilera+=texto+"\n";
+           m->insertRows(0,1);
+           m->setData(m->index(0),texto.c_str());
            texto="";
         }
     }
     archivo.close();
-    return texto;
+    return m;
 }

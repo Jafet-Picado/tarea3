@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "framebitacora.h"
+#include <iostream>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -36,7 +37,6 @@ void MainWindow::on_btnEvaluar_clicked()
 void MainWindow::on_btnBitacora_clicked()
 {
     controlador->guardarArchivo();
-    frm->setFuncion(QString::fromStdString(controlador->leerArchivo()));
 }
 
 void MainWindow::on_pushButton_clicked()
@@ -245,4 +245,13 @@ void MainWindow::on_pushButton_17_clicked()
     }else{
         ui->editFuncion->setText(s);
     }
+}
+
+void MainWindow::setBitacora(QStringListModel *m){
+    frm->setFuncion(m);
+}
+
+void MainWindow::on_btnLeer_clicked()
+{
+    controlador->leerArchivo();
 }

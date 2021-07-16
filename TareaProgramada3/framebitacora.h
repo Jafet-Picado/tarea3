@@ -2,7 +2,7 @@
 #define FRAMEBITACORA_H
 
 #include <QDialog>
-
+#include <QStringListModel>
 namespace Ui {
 class frameBitacora;
 }
@@ -14,7 +14,7 @@ class frameBitacora : public QDialog
 public:
     explicit frameBitacora(QWidget *parent = nullptr);
     ~frameBitacora();
-    void setFuncion(QString s);
+    void setFuncion(QStringListModel* s);
 
 private:
     Ui::frameBitacora *ui;

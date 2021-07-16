@@ -20,6 +20,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void setControlador(Controlador*c){controlador = c;};
+    void setBitacora(QStringListModel* m);
 
 private slots:
     void on_btnAgregar_clicked();
@@ -61,6 +62,8 @@ private slots:
     void on_pushButton_18_clicked();
 
     void on_pushButton_17_clicked();
+
+    void on_btnLeer_clicked();
 
 private:
     Ui::MainWindow *ui;

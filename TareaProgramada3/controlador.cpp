@@ -1,6 +1,7 @@
 #include "controlador.h"
 #include "mainwindow.h"
 #include <iostream>
+string p;
 Controlador::Controlador(){
     w = new MainWindow(nullptr);
     w->setControlador(this);
@@ -10,6 +11,7 @@ Controlador::Controlador(){
 void Controlador::setHilera(QString hilera){
     f = new Funcion();
     f->agregarMinTerminos(hilera.toStdString());
+    p+=f->getHileraG();
 }
 
 string Controlador::evaluar(bool a, bool b, bool c, bool d){
@@ -20,13 +22,18 @@ string Controlador::evaluar(bool a, bool b, bool c, bool d){
     }else{
         s+= "0";
     }
+    p+=f->getHileraF();
     return s;
 }
 
 void Controlador::guardarArchivo(){
-    bit->insertarFuncion(f->getHileraG());
+    bit->insertarFuncion(p);
 }
 
-string Controlador::leerArchivo(){
-    return bit->leerArchivo();
+void Controlador::leerArchivo(){
+    QStringListModel *m = bit->leerArchivo();
+    w->setBitacora(m);
 }
+
+
+

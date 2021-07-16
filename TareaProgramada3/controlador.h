@@ -16,7 +16,8 @@ public:
     void setHilera(QString hilera);
     string evaluar(bool a, bool b, bool c, bool d);
     void guardarArchivo();
-    string leerArchivo();
+    void leerArchivo();
+    void sHileraG();
 };
 
 #endif // CONTROLADOR_H

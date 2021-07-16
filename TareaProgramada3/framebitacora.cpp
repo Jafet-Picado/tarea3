@@ -13,6 +13,6 @@ frameBitacora::~frameBitacora()
     delete ui;
 }
 
-void frameBitacora::setFuncion(QString s){
-    ui->textEdit->setText(s);
+void frameBitacora::setFuncion(QStringListModel* m){
+    ui->listView->setModel(m);
 }

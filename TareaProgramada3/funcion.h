@@ -7,6 +7,7 @@ class Funcion
     Lista *lista;
     string hilera;
     string hileraG;
+    string hileraF;
 public:
     Funcion();
     void agregarMinTerminos(string hilera);
@@ -14,6 +15,7 @@ public:
     string getHilera(){return hilera;};
     string getDate();
     string getHileraG(){return hileraG;};
+    string getHileraF(){return hileraF;};
 };
 
 #endif // FUNCION_H

@@ -107,9 +107,9 @@ bool Funcion::evaluar(bool a, bool b, bool c, bool d){
         x++;
     }
     if(evaluar){
-        hileraG+=getDate()+" / f(a,b,c,d)= "+hilera+" = 1\n";
+        hileraF+=getDate()+" / f(a,b,c,d)= "+hilera+" = 1\n";
     }else{
-        hileraG+=getDate()+" / f(a,b,c,d)= "+hilera+" = 0\n";
+        hileraF+=getDate()+" / f(a,b,c,d)= "+hilera+" = 0\n";
     }
     return evaluar;
 }
