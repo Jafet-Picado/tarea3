@@ -20,7 +20,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void setControlador(Controlador*c){controlador = c;};
+<<<<<<< HEAD
     void setBitacora(QStringListModel* m);
+=======
+    void setBitacora(string m);
+>>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
 
 private slots:
     void on_btnAgregar_clicked();

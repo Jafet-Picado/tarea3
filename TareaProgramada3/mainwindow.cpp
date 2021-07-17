@@ -247,11 +247,19 @@ void MainWindow::on_pushButton_17_clicked()
     }
 }
 
+<<<<<<< HEAD
 void MainWindow::setBitacora(QStringListModel *m){
+=======
+void MainWindow::setBitacora(string m){
+>>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
     frm->setFuncion(m);
 }
 
 void MainWindow::on_btnLeer_clicked()
 {
+<<<<<<< HEAD
     controlador->leerArchivo();
+=======
+    frm->setFuncion(controlador->leerArchivo());
+>>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
 }

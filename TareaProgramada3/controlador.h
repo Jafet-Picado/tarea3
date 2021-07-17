@@ -16,8 +16,12 @@ public:
     void setHilera(QString hilera);
     string evaluar(bool a, bool b, bool c, bool d);
     void guardarArchivo();
+<<<<<<< HEAD
     void leerArchivo();
     void sHileraG();
+=======
+    string leerArchivo();
+>>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
 };
 
 #endif // CONTROLADOR_H

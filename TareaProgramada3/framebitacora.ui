@@ -13,7 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+<<<<<<< HEAD
   <widget class="QListView" name="listView">
+=======
+  <widget class="QTextEdit" name="textEdit">
+>>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
    <property name="geometry">
     <rect>
      <x>10</x>
