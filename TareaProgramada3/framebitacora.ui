@@ -6,24 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
-    <height>282</height>
+    <width>509</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-<<<<<<< HEAD
-  <widget class="QListView" name="listView">
-=======
   <widget class="QTextEdit" name="textEdit">
->>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>501</width>
-     <height>261</height>
+     <width>481</width>
+     <height>251</height>
     </rect>
    </property>
   </widget>

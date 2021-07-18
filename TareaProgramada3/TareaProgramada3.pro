@@ -21,7 +21,7 @@ INCLUDEPATH += "C:/Users/jafet/Desktop/Programacion II/Qt/Bitacora"
 LIBS += "C:/Users/jafet/Desktop/Programacion II/Qt/build-Bitacora-Desktop_Qt_5_12_10_MinGW_64_bit-Release/release/libBitacora.a"
 
 HEADERS += \
-    ../Bitacora/bitacora.h \
+    ../../Bitacora/bitacora.h \
     MinTermino.h \
     controlador.h \
     framebitacora.h \

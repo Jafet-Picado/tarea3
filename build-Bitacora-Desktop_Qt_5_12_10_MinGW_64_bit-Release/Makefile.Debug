@@ -120,7 +120,6 @@ compiler_clean: compiler_moc_predefs_clean
 
 ####### Compile
 
-<<<<<<< HEAD
 debug/bitacora.o: ../Bitacora/bitacora.cpp ../Bitacora/bitacora.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_64/include/QtCore/QStringListModel \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_64/include/QtCore/qstringlistmodel.h \
@@ -188,9 +187,6 @@ debug/bitacora.o: ../Bitacora/bitacora.cpp ../Bitacora/bitacora.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_64/include/QtCore/qcontiguouscache.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_64/include/QtCore/qsharedpointer.h \
 		C:/Qt/Qt5.12.10/5.12.10/mingw73_64/include/QtCore/qsharedpointer_impl.h
-=======
-debug/bitacora.o: ../Bitacora/bitacora.cpp ../Bitacora/bitacora.h
->>>>>>> 5335577 (Se agregó librería, pero falta tratar tema de directorio)
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\bitacora.o ..\Bitacora\bitacora.cpp
 
 ####### Install
