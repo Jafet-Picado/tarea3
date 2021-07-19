@@ -36,5 +36,12 @@ string Controlador::leerArchivo(){
     //w->setBitacora(m);
 }
 
+string* Controlador::getTerminos(){
+    string* arbol = new string[f->size()];
+    for(int i=1; i<=f->size();i++){
+        arbol[i-1] = f->getMinTermino(i);
+    }
+    return arbol;
+}
 
 

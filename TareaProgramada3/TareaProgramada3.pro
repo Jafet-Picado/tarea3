@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     controlador.cpp \
+    framearbol.cpp \
     framebitacora.cpp \
     funcion.cpp \
     lista.cpp \
@@ -21,9 +22,10 @@ INCLUDEPATH += "C:/Users/jafet/Desktop/Programacion II/Qt/Bitacora"
 LIBS += "C:/Users/jafet/Desktop/Programacion II/Qt/build-Bitacora-Desktop_Qt_5_12_10_MinGW_64_bit-Release/release/libBitacora.a"
 
 HEADERS += \
-    ../../Bitacora/bitacora.h \
+    ../Bitacora/Bitacora.h \
     MinTermino.h \
     controlador.h \
+    framearbol.h \
     framebitacora.h \
     funcion.h \
     lista.h \
@@ -31,6 +33,7 @@ HEADERS += \
 
 
 FORMS += \
+    framearbol.ui \
     framebitacora.ui \
     mainwindow.ui
 

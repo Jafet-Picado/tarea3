@@ -16,6 +16,8 @@ public:
     string getDate();
     string getHileraG(){return hileraG;};
     string getHileraF(){return hileraF;};
+    string getMinTermino(int i){return lista->iesimo(i)->getDato();};
+    int size(){return lista->longitud();};
 };
 
 #endif // FUNCION_H

@@ -9,7 +9,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     frm = new frameBitacora(this);
+    arb = new frameArbol();
+    //string j[] = {"ABCD","A'B'CD"};
+    //arb->setArbol(j,2);
     ui->tabWidget->addTab(frm, QString("Bitácora"));
+    ui->tabWidget->addTab(arb,QString("Árbol"));
 }
 
 MainWindow::~MainWindow()
@@ -21,6 +25,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_btnAgregar_clicked()
 {
     controlador->setHilera(ui->editFuncion->text());
+    arb->setArbol(controlador->getTerminos(),controlador->getSize());
 }
 
 void MainWindow::on_editFuncion_textEdited(const QString &arg1)

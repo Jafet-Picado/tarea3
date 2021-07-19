@@ -17,6 +17,8 @@ public:
     string evaluar(bool a, bool b, bool c, bool d);
     void guardarArchivo();
     string leerArchivo();
+    string* getTerminos();
+    int getSize(){ return f->size();};
 };
 
 #endif // CONTROLADOR_H

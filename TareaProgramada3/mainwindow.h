@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "controlador.h"
 #include "framebitacora.h"
+#include "framearbol.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,11 +18,10 @@ class MainWindow : public QMainWindow
 public:
     Controlador* controlador;
     frameBitacora *frm;
+    frameArbol *arb;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void setControlador(Controlador*c){controlador = c;};
-    void setBitacora(QStringListModel* m);
-    void setBitacora(string m);
 
 private slots:
     void on_btnAgregar_clicked();
