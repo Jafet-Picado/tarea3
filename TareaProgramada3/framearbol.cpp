@@ -18,6 +18,9 @@ frameArbol::~frameArbol()
 
 void frameArbol::setArbol(string *m, int size){
     QStandardItemModel *qs =new QStandardItemModel(this);
+    QString g = "+";
+    QStringList h(g);
+    qs->setHorizontalHeaderLabels(h);
     for(int i=0; i<size;i++){
         string s = m[i];
         QStandardItem *l = new QStandardItem("*");

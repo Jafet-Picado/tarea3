@@ -17,9 +17,9 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp
 
-INCLUDEPATH += "C:/Users/jafet/Desktop/Programacion II/Qt/Bitacora"
+INCLUDEPATH += "../Bitacora"
 
-LIBS += "C:/Users/jafet/Desktop/Programacion II/Qt/build-Bitacora-Desktop_Qt_5_12_10_MinGW_64_bit-Release/release/libBitacora.a"
+LIBS += "../build-Bitacora-Desktop_Qt_5_12_10_MinGW_64_bit-Release/release/libBitacora.a"
 
 HEADERS += \
     ../Bitacora/Bitacora.h \

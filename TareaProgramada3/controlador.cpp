@@ -31,9 +31,7 @@ void Controlador::guardarArchivo(){
 }
 
 string Controlador::leerArchivo(){
-    //string m = bit->leerArchivo();
     return bit->leerArchivo();
-    //w->setBitacora(m);
 }
 
 string* Controlador::getTerminos(){
