@@ -1,4 +1,4 @@
-Tarea Programada 3
+Tarea Programada 3. Versión Final
 
 Autores: Jafet Picado C05977 y Andy Alvarado C00315
 
