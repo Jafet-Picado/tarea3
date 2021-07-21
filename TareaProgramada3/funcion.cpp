@@ -1,29 +1,48 @@
+/*
+ * Clase encargada del manejo de funciones / Pertenece al modelo
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #include "funcion.h"
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+
+/*
+ * Constructor de la clase Función encargada de inicializar el objeto de la clase Lista
+ */
 Funcion::Funcion()
 {
     lista = new Lista();
 }
 
+/*
+ * Método encargado de separar los minTerminos de la función y añadirlos a la lista
+ *
+ * Args: Recibe un parametro de tipo string con la función ingresada por el usuario
+ */
 void Funcion::agregarMinTerminos(string hilera){
     this->hilera=hilera;
-    this->hileraG+=getDate()+" / f(a,b,c,d)= "+hilera+"\n";
+    this->hileraG+=getDate()+" / f(a,b,c,d)= "+hilera+"\n"; //Se almacena la función con hora y fecha de ingreso en una variable string
     char arr[hilera.length()];
     for(string::size_type x = 0; x < hilera.length(); x++) {
-        arr[x] = hilera[x];
+        arr[x] = hilera[x]; //Se convierte toda la función a un array de tipo char
     }
-    char* min = strtok(arr, "+");
+    char* min = strtok(arr, "+"); //Se separa la hilera con el primer +
     lista->agregarDato(min);
-    while(min!=NULL){
-        min=strtok(NULL,"+");
-        if(min!=NULL){
+    while(min!=NULL){ //Siempre que la hilera no haya acabado, no dejará de separar minTerminos
+        min=strtok(NULL,"+"); //El llamado a strtok cambia al no ser la primera vez
+        if(min!=NULL){ //El valor se ingresará a la lista únicamente si no es null
             lista->agregarDato(min);
         }
     }
 }
 
+/*
+ * Método encargado de evaluar la función ingresada por el usuario con los valores de verdad dados por el mismo
+ *
+ * Args: Recibe cuatro parametros de tipo bool con los valores de verdad asociados a cada variable
+ * Return: Retorna el resultado de la evaluación
+ */
 bool Funcion::evaluar(bool a, bool b, bool c, bool d){
     bool arr[lista->longitud()];
     int contador = 0;
@@ -114,6 +133,11 @@ bool Funcion::evaluar(bool a, bool b, bool c, bool d){
     return evaluar;
 }
 
+/*
+ * Método encargado de retornar una hilera de texto con la fecha y hora exacta del momento de su llamado
+ *
+ * Return: Retorna un string con la fecha y hora exacta
+ */
 string Funcion::getDate(){
     time_t now = time(0);
     struct tm tstruct;

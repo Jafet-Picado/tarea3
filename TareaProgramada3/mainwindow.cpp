@@ -1,8 +1,17 @@
+/*
+ * Clase de tipo ventana gráfica nativa de Qt para las funciones de la ventana principal
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "framebitacora.h"
 #include <iostream>
+
+/*
+ * Constructor de la ventana principal donde se inicializan los objetos de la ventada de bitacora y arbol,
+ * además de agregar las pestañas al objeto tipo tabWidget para cada una de estas ventanas
+ */
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -10,8 +19,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     frm = new frameBitacora(this);
     arb = new frameArbol();
-    //string j[] = {"ABCD","A'B'CD"};
-    //arb->setArbol(j,2);
     ui->tabWidget->addTab(frm, QString("Bitácora"));
     ui->tabWidget->addTab(arb,QString("Árbol"));
 }
@@ -21,7 +28,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_btnAgregar_clicked()
 {
     controlador->setHilera(ui->editFuncion->text());
@@ -30,6 +36,7 @@ void MainWindow::on_btnAgregar_clicked()
 
 void MainWindow::on_editFuncion_textEdited(const QString &arg1)
 {
+    //Se modifica el objeto donde se almacena la función para que solo permita ingresar mayusculas
     ui->editFuncion->setText(arg1.toUpper());
 }
 

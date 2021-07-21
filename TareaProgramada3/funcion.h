@@ -1,3 +1,7 @@
+/*
+ * Clase encargada del manejo de funciones / Pertenece al modelo
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef FUNCION_H
 #define FUNCION_H
 #include "lista.h"

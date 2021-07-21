@@ -1,3 +1,7 @@
+/*
+ * Clase de tipo ventana gráfica nativa de Qt para las funciones de la ventana principal
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 

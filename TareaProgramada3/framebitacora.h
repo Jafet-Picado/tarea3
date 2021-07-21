@@ -1,3 +1,7 @@
+/*
+ * Clase de tipo ventana gráfica nativa de Qt para las funciones de la vista de Bitacora
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef FRAMEBITACORA_H
 #define FRAMEBITACORA_H
 

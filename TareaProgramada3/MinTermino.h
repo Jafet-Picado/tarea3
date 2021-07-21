@@ -1,3 +1,8 @@
+/*
+ * Clase de MinTermino donde se almacena una hilera de tipo string con el minTermino y además se enlaza con el
+ * puntero del siguiente minTermino
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef MINTERMINO_H
 #define MINTERMINO_H
 #include <string>

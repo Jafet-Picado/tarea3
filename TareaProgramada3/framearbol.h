@@ -1,3 +1,7 @@
+/*
+ * Clase de tipo ventana gráfica nativa de Qt para las funciones de la vista tipo Árbol
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef FRAMEARBOL_H
 #define FRAMEARBOL_H
 

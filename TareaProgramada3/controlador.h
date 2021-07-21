@@ -1,3 +1,7 @@
+/*
+ * Clase controlador utilizada para realizar el modelo MVC
+ * Autores: Jafet Picado C05977 / Andy Alvarado C00315
+ */
 #ifndef CONTROLADOR_H
 #define CONTROLADOR_H
 #include "funcion.h"
